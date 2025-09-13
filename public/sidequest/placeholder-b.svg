@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="SideQuest Placeholder B">
+  <defs>
+    <linearGradient id="sqB" x1="0" x2="1">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#fca5a5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#fff7ed"/>
+  <rect x="80" y="120" width="1040" height="560" rx="24" fill="url(#sqB)"/>
+  <g fill="#1f2937" opacity="0.15">
+    <rect x="260" y="260" width="280" height="200" rx="24"/>
+    <rect x="600" y="260" width="280" height="200" rx="24"/>
+    <rect x="260" y="500" width="620" height="80" rx="20"/>
+  </g>
+</svg>
+
+
+
+
+
+

@@ -1,0 +1,1 @@
+{"root":["./src/main.tsx","./src/data/projects.ts","./src/data/sidequests.ts","./src/i18n/i18nprovider.tsx","./src/pages/about.tsx","./src/pages/contact.tsx","./src/pages/home.tsx","./src/pages/projectdetail.tsx","./src/pages/projects.tsx","./src/pages/sidequest.tsx","./src/shared/rootlayout.tsx","./vite-env.d.ts"],"version":"5.9.2"}

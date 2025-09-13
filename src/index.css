@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 基本的prose样式 */
+.prose {
+  color: theme('colors.neutral.700');
+  line-height: 1.7;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  color: theme('colors.neutral.900');
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.prose h1 { font-size: 2rem; }
+.prose h2 { font-size: 1.5rem; }
+.prose h3 { font-size: 1.25rem; }
+
+.prose p {
+  margin-bottom: 1rem;
+}
+
+.prose ul, .prose ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+}
+
+.prose strong {
+  font-weight: 600;
+  color: theme('colors.neutral.900');
+}
+
+.prose a {
+  color: theme('colors.accent.600');
+  text-decoration: underline;
+}
+
+.prose a:hover {
+  color: theme('colors.accent.700');
+}
+
+.prose img {
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
+  border-radius: 0.5rem;
+}
+
+/* Base tweaks for elegant light theme */
+:root {
+  color-scheme: light;
+}
+
+@layer base {
+  html, body, #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-neutral-50 text-neutral-900 antialiased;
+  }
+  a {
+    @apply text-neutral-700 underline-offset-4 hover:text-neutral-900 hover:underline transition-colors;
+  }
+}
+
+@layer components {
+  .container-px {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+  .btn-link {
+    @apply inline-flex items-center gap-2 text-neutral-800 hover:text-neutral-950 transition-colors;
+  }
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-full bg-neutral-900 text-white px-5 py-2.5 shadow-soft hover:bg-neutral-800 transition-colors;
+  }
+  .chip {
+    @apply inline-flex items-center rounded-full bg-neutral-100 text-neutral-700 px-3 py-1 text-sm;
+  }
+  .card {
+    @apply rounded-2xl bg-white shadow-soft ring-1 ring-neutral-100;
+  }
+}
+
+

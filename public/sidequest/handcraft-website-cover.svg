@@ -1,0 +1,99 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f1f5f9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="codeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="400" height="300" fill="url(#bgGradient)"/>
+  
+  <!-- 装饰性网格 -->
+  <g opacity="0.1">
+    <path d="M 0 60 L 400 60" stroke="#64748b" stroke-width="1"/>
+    <path d="M 0 120 L 400 120" stroke="#64748b" stroke-width="1"/>
+    <path d="M 0 180 L 400 180" stroke="#64748b" stroke-width="1"/>
+    <path d="M 0 240 L 400 240" stroke="#64748b" stroke-width="1"/>
+    <path d="M 60 0 L 60 300" stroke="#64748b" stroke-width="1"/>
+    <path d="M 120 0 L 120 300" stroke="#64748b" stroke-width="1"/>
+    <path d="M 180 0 L 180 300" stroke="#64748b" stroke-width="1"/>
+    <path d="M 240 0 L 240 300" stroke="#64748b" stroke-width="1"/>
+    <path d="M 300 0 L 300 300" stroke="#64748b" stroke-width="1"/>
+  </g>
+  
+  <!-- 中央代码屏幕 -->
+  <g transform="translate(200, 150)">
+    <!-- 屏幕外框 -->
+    <rect x="-80" y="-60" width="160" height="120" rx="8" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    
+    <!-- 屏幕内容区域 -->
+    <rect x="-70" y="-50" width="140" height="100" rx="4" fill="#0f172a"/>
+    
+    <!-- 代码行 -->
+    <g fill="#64748b" font-family="monospace" font-size="8">
+      <text x="-65" y="-35">&lt;html&gt;</text>
+      <text x="-60" y="-25">&lt;head&gt;</text>
+      <text x="-55" y="-15">&lt;title&gt;AI Website&lt;/title&gt;</text>
+      <text x="-60" y="-5">&lt;/head&gt;</text>
+      <text x="-60" y="5">&lt;body&gt;</text>
+      <text x="-55" y="15">&lt;h1&gt;Hello World&lt;/h1&gt;</text>
+      <text x="-55" y="25">&lt;p&gt;Made with AI&lt;/p&gt;</text>
+      <text x="-60" y="35">&lt;/body&gt;</text>
+      <text x="-65" y="45">&lt;/html&gt;</text>
+    </g>
+    
+    <!-- 光标闪烁效果 -->
+    <rect x="15" y="37" width="1" height="8" fill="#3b82f6">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- AI 图标 -->
+  <g transform="translate(100, 80)">
+    <circle cx="0" cy="0" r="20" fill="url(#aiGradient)" filter="url(#glow)"/>
+    <text x="0" y="5" text-anchor="middle" fill="white" font-family="system-ui" font-size="16" font-weight="bold">AI</text>
+  </g>
+  
+  <!-- 手工图标 -->
+  <g transform="translate(300, 220)">
+    <circle cx="0" cy="0" r="15" fill="url(#codeGradient)" opacity="0.8"/>
+    <path d="M -8 -5 L -3 0 L -8 5 M 3 -5 L 8 0 L 3 5" stroke="white" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- 装饰性元素 -->
+  <g opacity="0.4">
+    <!-- HTML 标签 -->
+    <text x="50" y="200" fill="#3b82f6" font-family="monospace" font-size="12">&lt;/&gt;</text>
+    <text x="320" y="60" fill="#8b5cf6" font-family="monospace" font-size="10">{ }</text>
+    
+    <!-- 点装饰 -->
+    <circle cx="80" cy="250" r="2" fill="#3b82f6"/>
+    <circle cx="350" cy="120" r="3" fill="#8b5cf6"/>
+    <circle cx="30" cy="150" r="2" fill="#6366f1"/>
+  </g>
+  
+  <!-- 标题文字 -->
+  <text x="200" y="280" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#475569">
+    Hand-crafted with AI
+  </text>
+</svg>
+
+
+
